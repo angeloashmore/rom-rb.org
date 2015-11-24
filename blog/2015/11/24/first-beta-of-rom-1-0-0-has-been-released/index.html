@@ -168,7 +168,8 @@ ga('send', 'pageview');</script></head><body class="blog blog_2015 blog_2015_11 
 <p>Probably the most noticable improvement/feature is the addition of the command graph DSL. The command graph was introduced in 0.9.0 and it allowed you to compose a single command that will be able to persist data coming in a nested structure, similar to <code>nested_attributes_for</code> in ActiveRecord, but more flexible.</p>
 
 <p>This release introduces support for <code>update</code> and <code>delete</code> commands in the graph as well as a new DSL for graph definitions. Here&rsquo;s an example:</p>
-<pre class="highlight ruby"><code><span class="c1"># assuming `rom` is your rom container and you have `create` commands for :users and :books relations</span>
+<pre class="highlight ruby"><code><span class="c1"># assuming `rom` is your rom container and you have `create` commands</span>
+<span class="c1"># for :users and :books relations</span>
 <span class="n">command</span> <span class="o">=</span> <span class="n">rom</span><span class="p">.</span><span class="nf">command</span> <span class="c1"># returns command builder</span>
 
 <span class="c1"># define a command that will persist user data with its book data</span>
@@ -186,7 +187,8 @@ ga('send', 'pageview');</script></head><body class="blog blog_2015 blog_2015_11 
 </code></pre>
 
 <p>It also supports <code>update</code> (<code>delete</code> works in the same way):</p>
-<pre class="highlight ruby"><code><span class="c1"># assuming `rom` is your rom container and you have `update` commands for :users and :books relations</span>
+<pre class="highlight ruby"><code><span class="c1"># assuming `rom` is your rom container and you have `update` commands</span>
+<span class="c1"># for :users and :books relations</span>
 <span class="n">command</span> <span class="o">=</span> <span class="n">rom</span><span class="p">.</span><span class="nf">command</span> <span class="c1"># returns command builder</span>
 
 <span class="c1"># define a command that will restrict user by its id and update it</span>
