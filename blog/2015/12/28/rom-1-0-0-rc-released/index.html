@@ -1,0 +1,114 @@
+<!DOCTYPE html><html><head><link href="/images/favicon.png" rel="icon" type="image/png" /><meta charset="utf-8" /><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /><meta content="ROM &raquo; Blog &raquo; ROM 1.0.0 RC Released via @rom_rb" name="twitter:description" /><meta content="ROM &raquo; Blog &raquo; ROM 1.0.0 RC Released" name="description" /><title>ROM &raquo; Blog &raquo; ROM 1.0.0 RC Released</title><style type="text/css">.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #d0d0d0;
+  background-color: #151515;
+}
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #505050;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
+}
+.highlight .kc {
+  color: #d28445;
+}
+.highlight .kt {
+  color: #d28445;
+}
+.highlight .kd {
+  color: #d28445;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
+}
+.highlight .sr {
+  color: #75b5aa;
+}
+.highlight .si {
+  color: #8f5536;
+}
+.highlight .se {
+  color: #8f5536;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
+}</style><link href="../../../../../stylesheets/all.css" rel="stylesheet" /><script src="../../../../../javascripts/all.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script><script>$(function() {
+  var share = new Share(".share")
+});
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2573270-5', 'auto');
+ga('send', 'pageview');</script></head><body class="blog blog_2015 blog_2015_12 blog_2015_12_28 blog_2015_12_28_rom-1-0-0-rc-released blog_2015_12_28_rom-1-0-0-rc-released_index"><div class="page-wrapper"><header><nav class="navbar navbar-default navbar-static-top"><div class="navbar-inner"><div class="container"><a class="navbar-brand" href="/">Ruby Object Mapper</a><ul class="nav navbar-nav"><li class=""><a class="" href="/introduction">Introduction</a></li><li class=""><a class="" href="/guides">Guides</a></li><li class=""><a class="" href="/tutorials">Tutorials</a></li><li class="dropdown"><a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">API <span class='caret'/></a><ul class="dropdown-menu" role="menu"><li><a href="http://www.rubydoc.info/gems/rom">rom</a></li><li><a href="http://www.rubydoc.info/gems/rom-sql">rom-sql</a></li><li><a href="http://www.rubydoc.info/gems/rom-yesql">rom-yesql</a></li><li><a href="http://www.rubydoc.info/gems/rom-influxdb">rom-influxdb</a></li><li><a href="http://www.rubydoc.info/gems/rom-event_store">rom-event_store</a></li><li><a href="http://www.rubydoc.info/gems/rom-rethinkdb">rom-rethinkdb</a></li><li><a href="http://www.rubydoc.info/gems/rom-mongo">rom-mongo</a></li><li><a href="http://www.rubydoc.info/gems/rom-redis">rom-redis</a></li><li><a href="http://www.rubydoc.info/gems/rom-csv">rom-csv</a></li><li><a href="http://www.rubydoc.info/gems/rom-yaml">rom-yaml</a></li><li><a href="http://www.rubydoc.info/gems/rom-dm">rom-dm</a></li><li><a href="http://www.rubydoc.info/gems/rom-lotus">rom-lotus</a></li><li><a href="http://www.rubydoc.info/gems/rom-rails">rom-rails</a></li><li><a href="http://www.rubydoc.info/gems/rom-roda">rom-roda</a></li></ul></li><li class=""><a class="" href="/blog">Blog</a></li><li class=""><a class="" href="/contribute">Contribute</a></li><li class=""><a class="" href="/status">Status</a></li><li class=""><a class="" href="/backers">Backers <3</a></li></ul></div></div></nav></header><div class="container"><div class="content"><div class="blog"><div class="row"><div class="col-md-8"><section class="articles"><article><header><h1>ROM 1.0.0 RC Released</h1><div class="article-meta">Published on December 28, 2015 by <a href="https://twitter.com/_solnic_">Piotr Solnica</a> under <a class="tag" href="/blog/tags/announcement/">announcement</a></div></header><hr /><div class="article-body"><p>Today the first, and hopefully last, Release Candidate version of ROM 1.0.0 was released. If you&rsquo;re running on beta or older versions now it&rsquo;s a really good moment to upgrade. This release only includes one <a href="https://github.com/rom-rb/rom/issues/311">small bug fix</a>.</p>
+
+<p>For more information please refer to the <a href="/blog/2015/11/24/first-beta-of-rom-1-0-0-has-been-released/">previous announcement</a>.</p>
+
+<p>As part of this release other gems have been upgraded too:</p>
+
+<ul>
+<li>rom 1.0.0.rc1</li>
+<li>rom-support 1.0.0.rc1</li>
+<li>rom-mapper 0.3.0.rc1</li>
+<li>rom-model 0.2.0.rc1</li>
+<li>rom-rails 0.6.0.rc1</li>
+<li>rom-sql 0.7.0.rc1</li>
+<li>rom-repository 0.2.0.rc1</li>
+</ul>
+
+<p>These are pre-releases which means you need to add them explicitly to your Gemfile. If you&rsquo;re having problem with upgrading <a href="https://github.com/rom-rb/rom/issues">report an issue</a>, ask for help on <a href="https://gitter.im/rom-rb/chat">gitter</a> or post a message on <a href="http://discuss.rom-rb.org">the forum</a>.</p>
+
+<p>The final version should be released on Wednesday, December 30th, unless we find some blocking issues which are hard to fix.</p>
+</div><div class="article-footer"><hr /><div class="article-social"><ul><li><div class="share"></div></li><li><a href="/blog/2015/12/28/rom-1-0-0-rc-released#disqus_thread">Leave a comment</a></li></ul></div><hr /><div class="article-comments"><div id="disqus_thread"><script>/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'rom-rb-blog'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script></div></div></div></article></section></div><div class="col-md-4"><aside><div class="blog-sidebar panel panel-default"><div class="panel-heading"><div class="panel-title">Wherein we talk about ROM</div></div><div class="panel-body"><a class="subscribe btn btn-info" href="http://rom-rb.org/blog/feed.xml">Subscribe</a></div></div><div class="tag-sidebar panel panel-default"><div class="panel-heading"><div class="panel-title">Browse tags</div></div><ul class="blog-tags"><li><span class="badge">5</span><a href="/blog/tags/release/">release</a></li><li><span class="badge">8</span><a href="/blog/tags/announcement/">announcement</a></li><li><span class="badge">1</span><a href="/blog/tags/oss/">oss</a></li><li><span class="badge">1</span><a href="/blog/tags/support/">support</a></li></ul></div></aside></div></div></div></div></div></div><footer><div class="container"><div class="social"><div class="github"><iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=rom-rb&repo=rom&type=watch&count=true" width="110"></iframe></div><div class="twitter"><a class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" href="https://twitter.com/rom_rb">Follow</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div></div><div class="muted copyright">Ruby Object Mapper &copy; 2014-2015</div></div></footer></body></html>
