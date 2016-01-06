@@ -1,0 +1,264 @@
+<!DOCTYPE html><html><head><link href="/images/favicon.png" rel="icon" type="image/png" /><meta charset="utf-8" /><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /><meta content="ROM &raquo; Blog &raquo; ROM 1.0.0 Released via @rom_rb" name="twitter:description" /><meta content="ROM &raquo; Blog &raquo; ROM 1.0.0 Released" name="description" /><title>ROM &raquo; Blog &raquo; ROM 1.0.0 Released</title><style type="text/css">.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #d0d0d0;
+  background-color: #151515;
+}
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #505050;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
+}
+.highlight .kc {
+  color: #d28445;
+}
+.highlight .kt {
+  color: #d28445;
+}
+.highlight .kd {
+  color: #d28445;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
+}
+.highlight .sr {
+  color: #75b5aa;
+}
+.highlight .si {
+  color: #8f5536;
+}
+.highlight .se {
+  color: #8f5536;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
+}</style><link href="../../../../../stylesheets/all.css" rel="stylesheet" /><script src="../../../../../javascripts/all.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script><script>$(function() {
+  var share = new Share(".share")
+});
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2573270-5', 'auto');
+ga('send', 'pageview');</script></head><body class="blog blog_2016 blog_2016_01 blog_2016_01_06 blog_2016_01_06_rom-1-0-0-released blog_2016_01_06_rom-1-0-0-released_index"><div class="page-wrapper"><header><nav class="navbar navbar-default navbar-static-top"><div class="navbar-inner"><div class="container"><a class="navbar-brand" href="/">Ruby Object Mapper</a><ul class="nav navbar-nav"><li class=""><a class="" href="/introduction">Introduction</a></li><li class=""><a class="" href="/guides">Guides</a></li><li class=""><a class="" href="/tutorials">Tutorials</a></li><li class="dropdown"><a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">API <span class='caret'/></a><ul class="dropdown-menu" role="menu"><li><a href="http://www.rubydoc.info/gems/rom">rom</a></li><li><a href="http://www.rubydoc.info/gems/rom-sql">rom-sql</a></li><li><a href="http://www.rubydoc.info/gems/rom-yesql">rom-yesql</a></li><li><a href="http://www.rubydoc.info/gems/rom-influxdb">rom-influxdb</a></li><li><a href="http://www.rubydoc.info/gems/rom-event_store">rom-event_store</a></li><li><a href="http://www.rubydoc.info/gems/rom-rethinkdb">rom-rethinkdb</a></li><li><a href="http://www.rubydoc.info/gems/rom-mongo">rom-mongo</a></li><li><a href="http://www.rubydoc.info/gems/rom-redis">rom-redis</a></li><li><a href="http://www.rubydoc.info/gems/rom-csv">rom-csv</a></li><li><a href="http://www.rubydoc.info/gems/rom-yaml">rom-yaml</a></li><li><a href="http://www.rubydoc.info/gems/rom-dm">rom-dm</a></li><li><a href="http://www.rubydoc.info/gems/rom-lotus">rom-lotus</a></li><li><a href="http://www.rubydoc.info/gems/rom-rails">rom-rails</a></li><li><a href="http://www.rubydoc.info/gems/rom-roda">rom-roda</a></li></ul></li><li class=""><a class="" href="/blog">Blog</a></li><li class=""><a class="" href="/contribute">Contribute</a></li><li class=""><a class="" href="/status">Status</a></li><li class=""><a class="" href="/backers">Backers <3</a></li></ul></div></div></nav></header><div class="container"><div class="content"><div class="blog"><div class="row"><div class="col-md-8"><section class="articles"><article><header><h1>ROM 1.0.0 Released</h1><div class="article-meta">Published on January 06, 2016 by <a href="https://twitter.com/_solnic_">Piotr Solnica</a> under <a class="tag" href="/blog/tags/announcement/">announcement</a></div></header><hr /><div class="article-body"><p>We&rsquo;re happy to announce the first stable release of <code>rom</code> core gem. It took us
+a little over a year to discover and implement the core interfaces that allow
+building rom adapters and extensions. Since no significant changes had to be made
+for many months and there are no outstanding issues - <code>rom 1.0.0</code> is now available.</p>
+
+<p>Following gems have been updated and released:</p>
+
+<ul>
+<li>rom 1.0.0 <a href="https://github.com/rom-rb/rom/blob/master/CHANGELOG.md#v100-2016-01-06">CHANGELOG</a></li>
+<li>rom-support 1.0.0 <a href="https://github.com/rom-rb/rom-support/blob/master/CHANGELOG.md#v100-2016-01-06">CHANGELOG</a></li>
+<li>rom-mapper 0.3.0 <a href="https://github.com/rom-rb/rom-mapper/blob/master/CHANGELOG.md#v030-2016-01-06">CHANGELOG</a></li>
+<li>rom-model 0.2.0 <a href="https://github.com/rom-rb/rom-model/blob/master/CHANGELOG.md#v020-2016-01-06">CHANGELOG</a></li>
+<li>rom-rails 0.6.0 <a href="https://github.com/rom-rb/rom-rails/blob/master/CHANGELOG.md#v060-2016-01-06">CHANGELOG</a></li>
+<li>rom-sql 0.7.0 <a href="https://github.com/rom-rb/rom-sql/blob/master/CHANGELOG.md#v070-2016-01-06">CHANGELOG</a></li>
+<li>rom-repository 0.2.0 <a href="https://github.com/rom-rb/rom-repository/blob/master/CHANGELOG.md#v020-2016-01-06">CHANGELOG</a></li>
+</ul>
+
+<h2 id="what-does-this-release-mean">What Does This Release Mean?</h2>
+
+<p>This is a huge milestone even though it doesn&rsquo;t change a lot from the usage point
+of view. Having a stable set of core interfaces will make it easier to develop
+adapters and extensions and get them to a stable state, too. Up until now every
+ROM release was huge, including lots of changes in many places, multiple gems
+were released at the same time. These kind of releases are hard to manage and it&rsquo;s
+also difficult to provide information about individual changes and improvements
+without overwhelming current users and potential new users.</p>
+
+<p>Now, with the stable rom core, we can focus on individual adapters and extensions.
+Release them separately, and probably more often. It will also make it simpler
+to explain and document changes and improvements.</p>
+
+<h2 id="what-happens-next">What Happens Next?</h2>
+
+<p>First of all, we&rsquo;re working on updating <a href="http://rom-rb.org">rom-rb.org</a>, which will
+have <a href="https://github.com/rom-rb/rom-rb.org/issues/111">a new design</a> and content -
+as the documentation is currently being rewritten. The initial set of docs was too
+focused on shared, lower-level APIs, mixed with adapter-specific APIs, which was
+confusing. New docs will focus on high-level guides specific to individual adapters,
+so it will be much easier to understand how to use ROM in a specific context.</p>
+
+<p>As far as individual gems go, here&rsquo;s a rough plan:</p>
+
+<ul>
+<li><a href="https://github.com/rom-rb/rom">rom</a>
+
+<ul>
+<li>Relation schema support that can be used by commands and for migrations</li>
+<li>Shared database migration interfaces for all adapters</li>
+</ul></li>
+<li><a href="https://github.com/rom-rb/rom-sql">rom-sql</a>
+
+<ul>
+<li>Improvements in the query DSL, especially when it comes to building
+complex joins. We&rsquo;re still using Sequel but that may be changed in the near future.</li>
+<li>Support for prepared statements</li>
+<li>Built-in types for relation schemas specific to individual databases</li>
+</ul></li>
+<li><a href="https://github.com/rom-rb/rom-repository">rom-repository</a>
+
+<ul>
+<li>Support for commands</li>
+<li>Setup interface, that would make it simple to quickly configure gateway
+connection and fetch data</li>
+<li>Support for dry-data structs and values</li>
+</ul></li>
+<li><a href="https://github.com/rom-rb/rom-model">rom-model</a>
+
+<ul>
+<li><code>ActiveModel::Validations</code> will be replaced by <a href="https://github.com/dryrb/dry-validation">dry-validation</a></li>
+<li><code>ROM::Model::Attributes</code> will be deprecated in favor of dry-validation schemas</li>
+</ul></li>
+<li><a href="https://github.com/rom-rb/rom-rails">rom-rails</a>
+
+<ul>
+<li>Rewrite on top of <a href="https://github.com/dryrb/dry-component">dry-component</a></li>
+<li><code>ROM::Model::Form</code> will be deprecated</li>
+</ul></li>
+</ul>
+
+<p>Apart from these improvements, there will be smaller clean ups, refactorings and
+performance tweaks.</p>
+
+<p>The following adapters are looking for contributors and/or maintainers:</p>
+
+<ul>
+<li><a href="https://github.com/rom-rb/rom-rethinkdb">rom-rethinkdb</a></li>
+<li><a href="https://github.com/rom-rb/rom-influxdb">rom-influxdb</a></li>
+<li><a href="https://github.com/rom-rb/rom-mongo">rom-mongo</a></li>
+<li><a href="https://github.com/rom-rb/rom-redis">rom-redis</a></li>
+<li><a href="https://github.com/rom-rb/rom-neo4j">rom-neo4j</a></li>
+<li><a href="https://github.com/rom-rb/rom-json">rom-json</a></li>
+<li><a href="https://github.com/rom-rb/rom-csv">rom-csv</a></li>
+<li><a href="https://github.com/rom-rb/rom-git">rom-git</a></li>
+<li><a href="https://github.com/rom-rb/rom-http">rom-http</a></li>
+<li><a href="https://github.com/rom-rb/rom-event_store">rom-event_store</a></li>
+</ul>
+
+<p>Please get in touch if your&rsquo;re interested in helping out :)</p>
+
+<h2 id="towards-rom-2-0-stable-adapters-and-repository">Towards rom 2.0, Stable Adapters and Repository</h2>
+
+<p>Further development of adapters and repository will very likely require changes
+in some of the core public APIs. Expect an evolution though, not a revolution.
+Some features will be introduced during 1.x.y upgrades, like relation schema, but
+any public API change will require a major version bump since rom follows SemVer.
+It&rsquo;s probably safe to assume this will happen later this year.</p>
+
+<p><code>rom</code> 2.0.0 will be a base for the first stable releases of individual adapters and
+extensions. That&rsquo;s why it is so important to focus on other adapters, not just
+<code>rom-sql</code>, to see what kind of improvements are needed and whether it&rsquo;s going to
+break any public APIs.</p>
+
+<h2 id="providing-feedback-and-reporting-issues">Providing Feedback And Reporting Issues</h2>
+
+<p>If you have found an issue or you&rsquo;re seeking help, there are number of ways you
+can get in touch:</p>
+
+<ul>
+<li>Report <a href="https://github.com/rom-rb/rom/issues">an issue</a> on GitHub, preferably
+in the issue tracker for the specific rom project. If you&rsquo;re not sure which one
+it is - don&rsquo;t worry and report it in the main rom issue tracker</li>
+<li>Ask for help in <a href="https://gitter.im/rom-rb/chat">the gitter channel</a></li>
+<li>Post a message <a href="http://discuss.rom-rb.org">on our forum</a></li>
+</ul>
+
+<p>If you&rsquo;ve got feedback regarding documentation and/or the website, please report
+an issue in <a href="https://github.com/rom-rb/rom-rb.org/issues">the rom-rb.org</a> repo.</p>
+
+<h2 id="thank-you">Thank You!</h2>
+
+<p>I&rsquo;d like to use this opportunity to simply say &ldquo;Thank You!&rdquo; to everybody involved
+with the project. Many people have been supporting ROM in various ways, either
+by contributing bug fixes, adding features or making huge refactorings. There
+are also many people who have been very helpful in the gitter channel, providing
+support for others who were trying out ROM.</p>
+
+<p>Really special thanks go to early adopters and contributors:</p>
+
+<ul>
+<li><a href="https://github.com/aflatter">Alexander Flatter</a> - for adopting rom very early,
+helping with API design, contributing code and supporting users in the channel</li>
+<li><a href="https://github.com/nepalez">Andrew Kozin</a> - for helping with rom-mapper, creating
+rom-migrator, rom-cassandra and rom-kafka</li>
+<li><a href="https://github.com/AMHOL">Andy Holland</a> - for helping with rom core, creating
+rom-http and being supportive in the channel</li>
+<li><a href="https://github.com/cflipse">Chris Flipse</a> - who helped by providing patches
+and helping me with rom-rails and rom-yaml</li>
+<li><a href="https://github.com/endash">Christopher Swasey</a> - for his insane effort to refactor
+and improve rom setup interfaces</li>
+<li><a href="https://github.com/elskwid">Don Morrison</a> - for supporting me in the very early
+days of ROM, helping with adapter interface, documentation, rom-rb website and
+release announcements</li>
+<li><a href="https://github.com/kwando">Hannes Nevalainen</a> - for testing things out early,
+providing awesome feedback and contributing to different rom projects</li>
+<li><a href="https://github.com/maetl">Mark Rickerby</a> - who built rom-neo4j and helped with
+other projects, rom-rb website and release announcements</li>
+<li><a href="https://github.com/gotar">Oskar Szrajer</a> - who helped a lot with rom-sql, rom-yesql,
+other adapters and patches in multiple rom projects as well as helped promoting
+rom at local Ruby meetups AND by providing support in our gitter channel</li>
+<li><a href="https://github.com/splattael">Peter Suschlik</a> - for helping with performance
+improvements, support libs and helping with PRs. Peter is currently #3 comitter :)</li>
+<li><a href="https://github.com/robinetmiller">Robin Miller</a> - for helping with the new
+documentation and providing great feedback</li>
+</ul>
+
+<p>I&rsquo;m terribly sorry if I missed somebody! Thank you <em>so much</em> for helping with this
+enormous effort!</p>
+
+<p>Happy 2016 :)</p>
+</div><div class="article-footer"><hr /><div class="article-social"><ul><li><div class="share"></div></li><li><a href="/blog/2016/01/06/rom-1-0-0-released#disqus_thread">Leave a comment</a></li></ul></div><hr /><div class="article-comments"><div id="disqus_thread"><script>/* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+var disqus_shortname = 'rom-rb-blog'; // required: replace example with your forum shortname
+
+/* * * DON'T EDIT BELOW THIS LINE * * */
+(function() {
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script></div></div></div></article></section></div><div class="col-md-4"><aside><div class="blog-sidebar panel panel-default"><div class="panel-heading"><div class="panel-title">Wherein we talk about ROM</div></div><div class="panel-body"><a class="subscribe btn btn-info" href="http://rom-rb.org/blog/feed.xml">Subscribe</a></div></div><div class="tag-sidebar panel panel-default"><div class="panel-heading"><div class="panel-title">Browse tags</div></div><ul class="blog-tags"><li><span class="badge">5</span><a href="/blog/tags/release/">release</a></li><li><span class="badge">9</span><a href="/blog/tags/announcement/">announcement</a></li><li><span class="badge">1</span><a href="/blog/tags/oss/">oss</a></li><li><span class="badge">1</span><a href="/blog/tags/support/">support</a></li></ul></div></aside></div></div></div></div></div></div><footer><div class="container"><div class="social"><div class="github"><iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=rom-rb&repo=rom&type=watch&count=true" width="110"></iframe></div><div class="twitter"><a class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" href="https://twitter.com/rom_rb">Follow</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div></div><div class="muted copyright">Ruby Object Mapper &copy; 2014-2015</div></div></footer></body></html>
