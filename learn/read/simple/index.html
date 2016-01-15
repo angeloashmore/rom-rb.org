@@ -1,0 +1,286 @@
+<!DOCTYPE html><html><head><link href="/images/favicon.png" rel="icon" type="image/png" /><meta charset="utf-8" /><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /><meta content="ROM &raquo; Learn &raquo; Simple via @rom_rb" name="twitter:description" /><meta content="ROM &raquo; Learn &raquo; Simple" name="description" /><title>ROM &raquo; Learn &raquo; Simple</title><style type="text/css">.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #d0d0d0;
+  background-color: #151515;
+}
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #505050;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
+}
+.highlight .kc {
+  color: #d28445;
+}
+.highlight .kt {
+  color: #d28445;
+}
+.highlight .kd {
+  color: #d28445;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
+}
+.highlight .sr {
+  color: #75b5aa;
+}
+.highlight .si {
+  color: #8f5536;
+}
+.highlight .se {
+  color: #8f5536;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
+}</style><link href="../../../stylesheets/all.css" rel="stylesheet" /><script src="../../../javascripts/all.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script><script>$(function() {
+  var share = new Share(".share")
+});
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2573270-5', 'auto');
+ga('send', 'pageview');</script></head><body class="learn learn_read learn_read_simple learn_read_simple_index"><div class="page-wrapper"><header><nav class="navbar navbar-default navbar-static-top"><div class="navbar-inner"><div class="container"><a class="navbar-brand" href="/">Ruby Object Mapper</a><ul class="nav navbar-nav"><li class=""><a class="" href="/learn">Learn</a></li><li class="dropdown"><a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">API <span class='caret'/></a><ul class="dropdown-menu" role="menu"><li><a href="http://www.rubydoc.info/gems/rom">rom</a></li><li><a href="http://www.rubydoc.info/gems/rom-sql">rom-sql</a></li><li><a href="http://www.rubydoc.info/gems/rom-yesql">rom-yesql</a></li><li><a href="http://www.rubydoc.info/gems/rom-influxdb">rom-influxdb</a></li><li><a href="http://www.rubydoc.info/gems/rom-event_store">rom-event_store</a></li><li><a href="http://www.rubydoc.info/gems/rom-rethinkdb">rom-rethinkdb</a></li><li><a href="http://www.rubydoc.info/gems/rom-mongo">rom-mongo</a></li><li><a href="http://www.rubydoc.info/gems/rom-redis">rom-redis</a></li><li><a href="http://www.rubydoc.info/gems/rom-csv">rom-csv</a></li><li><a href="http://www.rubydoc.info/gems/rom-yaml">rom-yaml</a></li><li><a href="http://www.rubydoc.info/gems/rom-dm">rom-dm</a></li><li><a href="http://www.rubydoc.info/gems/rom-lotus">rom-lotus</a></li><li><a href="http://www.rubydoc.info/gems/rom-rails">rom-rails</a></li><li><a href="http://www.rubydoc.info/gems/rom-roda">rom-roda</a></li></ul></li><li class=""><a class="" href="/blog">Blog</a></li><li class=""><a class="" href="/contribute">Contribute</a></li><li class=""><a class="" href="/status">Status</a></li><li class=""><a class="" href="/backers">Backers <3</a></li></ul></div></div></nav></header><div class="container"><div class="content"><div class="row"><div class="col-md-3"><ul class="nav nav-pills nav-stacked"><li class="nav-heading"><a class="nav-heading" href="/learn">Introduction</a></li><li class=""><a class="" href="/learn/introduction/philosophy">Philosophy</a></li><li class=""><a class="" href="/learn/introduction/why">Why ROM?</a></li><li class=""><a class="" href="/learn/introduction/activerecord">Active Record and ROM</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/getting-started">Getting Started</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/setup">Setup</a></li><li class=""><a class="" href="/learn/setup/block-style">Block Style</a></li><li class=""><a class="" href="/learn/setup/rails">Rails</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/read">Reading</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/write">Writing</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/adapters">Adapters</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/advanced">Advanced Topics</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/glossary">Glossary</a></li></ul></div><div class="col-md-9"><div class="page-article"><h1 id="read-simple">Read - Simple</h1>
+
+<h2 id="relations">Relations</h2>
+
+<p>Relations are the basis for reading data. Many adapters, like the popular <code>rom-sql</code> support
+automatically inferring default relations from your datastore schema. Hooray!</p>
+
+<p>If your chosen adapter doesn&rsquo;t support relation inference, or you want to override the default,
+just call <code>Configuration#relation</code>.</p>
+<pre class="highlight ruby"><code><span class="n">rom_container</span> <span class="o">=</span> <span class="no">ROM</span><span class="p">.</span><span class="nf">container</span><span class="p">(</span><span class="ss">:sql</span><span class="p">,</span> <span class="s1">'sqlite::memory'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">rom</span><span class="o">|</span>
+  <span class="n">rom</span><span class="p">.</span><span class="nf">use</span> <span class="ss">:macros</span>
+
+  <span class="n">rom</span><span class="p">.</span><span class="nf">relation</span><span class="p">(</span><span class="ss">:users</span><span class="p">)</span>
+
+  <span class="n">rom</span><span class="p">.</span><span class="nf">relation</span><span class="p">(</span><span class="ss">:tasks</span><span class="p">)</span> <span class="k">do</span>
+    <span class="c1"># overriding the default dataset to link the relation to a table of a different name</span>
+    <span class="n">dataset</span> <span class="ss">:tickets</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>Most of the time, though, you&rsquo;ll do reading though a <em>Repository</em>.</p>
+
+<h2 id="repositories">Repositories</h2>
+
+<p>A Repository (&ldquo;Repo&rdquo;) object provides a lot of conveniences for reading data with relations.</p>
+
+<p>You need to explicitly declare which <code>relations</code> it can access:</p>
+<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'rom-repository'</span>
+
+<span class="c1"># Assuming a database with table 'users'</span>
+<span class="n">rom_container</span> <span class="o">=</span> <span class="no">ROM</span><span class="p">.</span><span class="nf">container</span><span class="p">(</span><span class="ss">:sql</span><span class="p">,</span> <span class="s1">'sqlite::memory'</span><span class="p">)</span>
+
+<span class="k">class</span> <span class="nc">MyRepository</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Repository</span><span class="o">::</span><span class="no">Base</span>
+  <span class="n">relations</span> <span class="ss">:users</span>
+
+  <span class="c1"># ... selector methods will go here. We'll discuss those later</span>
+<span class="k">end</span>
+
+<span class="n">user_repo</span> <span class="o">=</span> <span class="no">MyRepository</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">rom_container</span><span class="p">)</span>
+
+<span class="n">user_repo</span><span class="p">.</span><span class="nf">users</span><span class="p">.</span><span class="nf">to_a</span>
+<span class="c1"># =&gt; []</span>
+</code></pre>
+
+<p>Depending on how complex your application becomes, you may want to create separate Repository classes to
+subdivide duties.</p>
+<pre class="highlight ruby"><code><span class="c1"># Assuming a database with tables 'users' and 'projects'</span>
+<span class="n">rom_container</span> <span class="o">=</span> <span class="no">ROM</span><span class="p">.</span><span class="nf">container</span><span class="p">(</span><span class="ss">:sql</span><span class="p">,</span> <span class="s1">'sqlite::memory'</span><span class="p">)</span>
+
+<span class="c1"># Perhaps one Repo to handle users and related authentication relations</span>
+<span class="k">class</span> <span class="nc">UsersRepository</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Repository</span><span class="o">::</span><span class="no">Base</span>
+  <span class="n">relations</span> <span class="ss">:users</span>
+
+  <span class="c1"># ... [users-related selector methods go here]</span>
+<span class="k">end</span>
+
+<span class="c1"># Another repository could handle the projects and related concepts</span>
+<span class="k">class</span> <span class="nc">ProjectRepository</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Repository</span><span class="o">::</span><span class="no">Base</span>
+  <span class="n">relations</span> <span class="ss">:projects</span>
+
+  <span class="c1"># ... [project-related selector methods go here]</span>
+<span class="k">end</span>
+
+<span class="n">user_repo</span> <span class="o">=</span> <span class="no">UserRepository</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">rom_container</span><span class="p">)</span>
+<span class="n">project_repo</span> <span class="o">=</span> <span class="no">ProjectRepository</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">rom_container</span><span class="p">)</span>
+
+<span class="c1"># now we can pass both repositories into your app</span>
+<span class="no">MyApp</span><span class="p">.</span><span class="nf">run</span><span class="p">(</span><span class="n">user_repo</span><span class="p">,</span> <span class="n">project_repo</span><span class="p">)</span>
+</code></pre>
+
+<h3 id="selector-methods">Selector Methods</h3>
+
+<p>While defining a Repository, you will also define its methods for domain-specific queries. These are called
+<strong>selector methods</strong>.</p>
+
+<p>They use the querying methods provided by the adapter to accomplish their task.
+For example, the <code>rom-sql</code> adapter provides methods like <code>Relation#where</code>.</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">MyRepository</span>
+  <span class="c1"># declaring :users here makes the #users method available</span>
+  <span class="n">relations</span> <span class="ss">:users</span>
+
+  <span class="c1"># find all users with the given attributes</span>
+  <span class="k">def</span> <span class="nf">users_with</span><span class="p">(</span><span class="n">attributes_hash</span><span class="p">)</span>
+    <span class="n">users</span><span class="p">.</span><span class="nf">where</span><span class="p">(</span><span class="n">attributes_hash</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="c1"># collect  a list of all user ids</span>
+  <span class="k">def</span> <span class="nf">user_id_list</span>
+    <span class="n">users</span><span class="p">.</span><span class="nf">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">user</span><span class="o">|</span> <span class="n">user</span><span class="p">[</span><span class="ss">:id</span><span class="p">]</span> <span class="p">}</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>Read your adapter&rsquo;s documentation to see the full listing of its Relation methods.</p>
+
+<aside class="well">
+These are just simple reads. See the <a href="/learn/associations">Associations</a> section to see how to
+construct multi-relation selector methods using joins.
+</aside>
+
+<h4 id="single-results-vs-many-results">Single Results vs Many Results</h4>
+
+<p>Every relation is lazy loading and most methods return another relation. To
+materialize the relation and get actual data, use <code>#one</code>, <code>#one!</code>, or <code>#to_a</code>.</p>
+<pre class="highlight ruby"><code><span class="c1"># Produces a single tuple.</span>
+<span class="c1"># Raises an error if there are 0 results</span>
+<span class="n">users</span><span class="p">.</span><span class="nf">one</span>
+
+<span class="c1"># Produces a single tuple.</span>
+<span class="c1"># Raises an error if there are 0 results or more than one</span>
+<span class="n">users</span><span class="p">.</span><span class="nf">one!</span>
+
+<span class="c1"># Produces an array of tuples, possibly empty.</span>
+<span class="n">users</span><span class="p">.</span><span class="nf">to_a</span>
+</code></pre>
+
+<h2 id="full-example">Full Example</h2>
+
+<p>This short example demonstrates using selector methods, #one, and #to_a.</p>
+<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'rom-repository'</span>
+
+<span class="n">rom_container</span> <span class="o">=</span> <span class="no">ROM</span><span class="p">.</span><span class="nf">container</span><span class="p">(</span><span class="ss">:sql</span><span class="p">,</span> <span class="s1">'sqlite::memory'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">rom</span><span class="o">|</span>
+  <span class="n">rom</span><span class="p">.</span><span class="nf">use</span> <span class="ss">:macros</span>
+
+  <span class="n">rom</span><span class="p">.</span><span class="nf">relation</span><span class="p">(</span><span class="ss">:users</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">MyRepository</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Repository</span><span class="o">::</span><span class="no">Base</span>
+  <span class="n">relations</span> <span class="ss">:users</span> <span class="c1"># this makes the #users method available</span>
+
+  <span class="c1"># selector methods</span>
+  <span class="k">def</span> <span class="nf">users_with</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
+     <span class="n">users</span><span class="p">.</span><span class="nf">where</span><span class="p">(</span><span class="n">params</span><span class="p">).</span><span class="nf">to_a</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">user_by_id</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+     <span class="n">users</span><span class="p">.</span><span class="nf">where</span><span class="p">(</span><span class="ss">id: </span><span class="nb">id</span><span class="p">).</span><span class="nf">one!</span>
+  <span class="k">end</span>
+
+  <span class="c1"># ... etc</span>
+<span class="k">end</span>
+
+<span class="no">MyApp</span><span class="p">.</span><span class="nf">run</span><span class="p">(</span><span class="n">rom_container</span><span class="p">,</span> <span class="no">MyRepository</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">rom_container</span><span class="p">))</span>
+</code></pre>
+
+<p>And then in our app we can use the selector methods:</p>
+<pre class="highlight ruby"><code><span class="c1"># assuming that there is already data present</span>
+
+<span class="n">repository</span><span class="p">.</span><span class="nf">users_with</span><span class="p">(</span><span class="ss">first_name: </span><span class="s1">'Malcolm'</span><span class="p">,</span> <span class="ss">last_name: </span><span class="s1">'Reynolds'</span><span class="p">)</span>
+<span class="c1">#=&gt; [ROM::Struct[User] , ROM::Struct[User], ...]</span>
+
+<span class="n">repository</span><span class="p">.</span><span class="nf">user_by_id</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1">#=&gt; ROM::Struct[User]</span>
+</code></pre>
+
+<h2 id="mapping-to-custom-objects">Mapping To Custom Objects</h2>
+
+<p>Repositories can map relations to your custom objects. As a general best-practice
+every public repository method should return materialized, domain objects.</p>
+
+<aside class="well">
+You can use any object type where constructor accepts a hash with attributes.
+</aside>
+
+<h3 id="using-with-dry-data">Using With dry-data</h3>
+
+<p><a href="https://github.com/dryrb/dry-data">dry-data</a> provides interfaces for defining
+structs and values. These object types are suitable to use with repositories, as
+they can easily build simple objects or complex aggregates and support custom
+types for individual attribute values, too.</p>
+
+<p>Here&rsquo;s a simple example how to define a location value:</p>
+<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'dry-data'</span>
+<span class="nb">require</span> <span class="s1">'rom-repository'</span>
+
+<span class="n">rom_container</span> <span class="o">=</span> <span class="no">ROM</span><span class="p">.</span><span class="nf">container</span><span class="p">(</span><span class="ss">:sql</span><span class="p">,</span> <span class="s1">'sqlite::memory'</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">rom</span><span class="o">|</span>
+  <span class="n">rom</span><span class="p">.</span><span class="nf">use</span> <span class="ss">:macros</span>
+
+  <span class="n">rom</span><span class="p">.</span><span class="nf">relation</span><span class="p">(</span><span class="ss">:locations</span><span class="p">)</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">Location</span> <span class="o">&lt;</span> <span class="no">Dry</span><span class="o">::</span><span class="no">Data</span><span class="o">::</span><span class="no">Value</span>
+  <span class="n">attribute</span> <span class="ss">:lat</span><span class="p">,</span> <span class="no">Types</span><span class="o">::</span><span class="no">Strict</span><span class="o">::</span><span class="no">Float</span>
+  <span class="n">attribute</span> <span class="ss">:lng</span><span class="p">,</span> <span class="no">Types</span><span class="o">::</span><span class="no">Strict</span><span class="o">::</span><span class="no">Float</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">MyRepository</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Repository</span><span class="o">::</span><span class="no">Base</span>
+  <span class="n">relations</span> <span class="ss">:locations</span>
+
+  <span class="k">def</span> <span class="nf">all_locations</span>
+    <span class="n">locations</span><span class="p">.</span><span class="nf">select</span><span class="p">(</span><span class="ss">:lat</span><span class="p">,</span> <span class="ss">:lng</span><span class="p">).</span><span class="nf">as</span><span class="p">(</span><span class="no">Location</span><span class="p">).</span><span class="nf">to_a</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">repo</span> <span class="o">=</span> <span class="no">MyRepository</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="n">rom_container</span><span class="p">)</span>
+
+<span class="n">repo</span><span class="p">.</span><span class="nf">all_locations</span>
+</code></pre>
+<div class="page-article-edit"><hr /><div class="share pull-left"></div><p class="pull-right">Edit this article on <a href="https://github.com/tenjininc/rom-rb.org/tree/master/source/doc-pages/learn/read/simple.md">GitHub</a></p></div></div></div></div></div></div></div><footer><div class="container"><div class="social"><div class="github"><iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=rom-rb&repo=rom&type=watch&count=true" width="110"></iframe></div><div class="twitter"><a class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" href="https://twitter.com/rom_rb">Follow</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div></div><div class="muted copyright">Ruby Object Mapper &copy; 2014-2016</div></div></footer></body></html>

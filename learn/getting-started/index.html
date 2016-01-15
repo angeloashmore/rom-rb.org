@@ -1,0 +1,154 @@
+<!DOCTYPE html><html><head><link href="/images/favicon.png" rel="icon" type="image/png" /><meta charset="utf-8" /><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /><meta content="ROM &raquo; Learn &raquo; Getting-started via @rom_rb" name="twitter:description" /><meta content="ROM &raquo; Learn &raquo; Getting-started" name="description" /><title>ROM &raquo; Learn &raquo; Getting-started</title><style type="text/css">.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #d0d0d0;
+  background-color: #151515;
+}
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #505050;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
+}
+.highlight .kc {
+  color: #d28445;
+}
+.highlight .kt {
+  color: #d28445;
+}
+.highlight .kd {
+  color: #d28445;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
+}
+.highlight .sr {
+  color: #75b5aa;
+}
+.highlight .si {
+  color: #8f5536;
+}
+.highlight .se {
+  color: #8f5536;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
+}</style><link href="../../stylesheets/all.css" rel="stylesheet" /><script src="../../javascripts/all.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script><script>$(function() {
+  var share = new Share(".share")
+});
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2573270-5', 'auto');
+ga('send', 'pageview');</script></head><body class="learn learn_getting-started learn_getting-started_index"><div class="page-wrapper"><header><nav class="navbar navbar-default navbar-static-top"><div class="navbar-inner"><div class="container"><a class="navbar-brand" href="/">Ruby Object Mapper</a><ul class="nav navbar-nav"><li class=""><a class="" href="/learn">Learn</a></li><li class="dropdown"><a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">API <span class='caret'/></a><ul class="dropdown-menu" role="menu"><li><a href="http://www.rubydoc.info/gems/rom">rom</a></li><li><a href="http://www.rubydoc.info/gems/rom-sql">rom-sql</a></li><li><a href="http://www.rubydoc.info/gems/rom-yesql">rom-yesql</a></li><li><a href="http://www.rubydoc.info/gems/rom-influxdb">rom-influxdb</a></li><li><a href="http://www.rubydoc.info/gems/rom-event_store">rom-event_store</a></li><li><a href="http://www.rubydoc.info/gems/rom-rethinkdb">rom-rethinkdb</a></li><li><a href="http://www.rubydoc.info/gems/rom-mongo">rom-mongo</a></li><li><a href="http://www.rubydoc.info/gems/rom-redis">rom-redis</a></li><li><a href="http://www.rubydoc.info/gems/rom-csv">rom-csv</a></li><li><a href="http://www.rubydoc.info/gems/rom-yaml">rom-yaml</a></li><li><a href="http://www.rubydoc.info/gems/rom-dm">rom-dm</a></li><li><a href="http://www.rubydoc.info/gems/rom-lotus">rom-lotus</a></li><li><a href="http://www.rubydoc.info/gems/rom-rails">rom-rails</a></li><li><a href="http://www.rubydoc.info/gems/rom-roda">rom-roda</a></li></ul></li><li class=""><a class="" href="/blog">Blog</a></li><li class=""><a class="" href="/contribute">Contribute</a></li><li class=""><a class="" href="/status">Status</a></li><li class=""><a class="" href="/backers">Backers <3</a></li></ul></div></div></nav></header><div class="container"><div class="content"><div class="row"><div class="col-md-3"><ul class="nav nav-pills nav-stacked"><li class="nav-heading"><a class="nav-heading" href="/learn">Introduction</a></li><li class=""><a class="" href="/learn/introduction/philosophy">Philosophy</a></li><li class=""><a class="" href="/learn/introduction/why">Why ROM?</a></li><li class=""><a class="" href="/learn/introduction/activerecord">Active Record and ROM</a></li><li class="nav-heading active"><a class="nav-heading active" href="/learn/getting-started">Getting Started</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/setup">Setup</a></li><li class=""><a class="" href="/learn/setup/block-style">Block Style</a></li><li class=""><a class="" href="/learn/setup/rails">Rails</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/read">Reading</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/write">Writing</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/adapters">Adapters</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/advanced">Advanced Topics</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/glossary">Glossary</a></li></ul></div><div class="col-md-9"><div class="page-article"><h1>Getting Started</h1><h2>Install</h2><p>Choose one or more adapters you intend to use, and run the install command for each one:</p><p><div class="installation"><div class="row"><div class="col-md-3"><div class="dropdown" id="db-dropdown"><button aria-expanded="true" class="btn btn-default dropdown-toggle" data-toggle="dropdown" id="db-select" type="button"><span class="value">Select Datastore</span><span class="caret"></span></button><ul aria-labelledby="db-select" class="dropdown-menu" role="menu"><li role="presentation"><a href="#" role="menutime" tabindex="-1">SQL</a><a href="#" role="menutime" tabindex="-1">Cassandra</a><a href="#" role="menutime" tabindex="-1">MongoDB</a><a href="#" role="menutime" tabindex="-1">CouchDB</a><a href="#" role="menutime" tabindex="-1">Neo4j</a><a href="#" role="menutime" tabindex="-1">Event Store</a><a href="#" role="menutime" tabindex="-1">RethinkDB</a><a href="#" role="menutime" tabindex="-1">HTTP</a><a href="#" role="menutime" tabindex="-1">CSV</a><a href="#" role="menutime" tabindex="-1">YAML</a></li></ul></div></div><div class="col-md-4"><pre><code id="gem-install-code" class="highlight shell">$ gem install rom</code></pre></div></div></div><script src="/javascripts/gem-select.js"></script></p><div class="well"><strong>How to choose an adapter?</strong><p>The most popular adapter is<code>rom-sql</code>, but some projects connect to an http API, or need the expandability of MongoDB and CouchDB.It's up to you to choose the appropriate solution for your application's needs.</p></div><h2>Require</h2><section><p>Call <code>require</code> for <code>rom-repository</code> and each adapter you want to use in your project:</p>
+<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'rom-repository'</span>  <span class="c1"># repository makes simple operations easy </span>
+
+<span class="c1"># ... and don't forget adapters</span>
+<span class="nb">require</span> <span class="s1">'rom-sql'</span>         <span class="c1"># use this if you installed sql adapter</span>
+<span class="nb">require</span> <span class="s1">'rom-http'</span>        <span class="c1"># and this for http</span>
+<span class="nb">require</span> <span class="s1">'rom-couchdb'</span>     <span class="c1"># ... etc </span>
+
+</code></pre>
+</section><h2>Overview</h2><section><p>ROM encourages a clear separation between your application domain and the data
+access layer. This is more than just hiding access behind methods. Your
+application is not coupled to the details of data retrieval or manipulation.</p>
+
+<p>The figure below represents the data flow through an application using ROM:</p>
+
+<p><img src="/images/rom-design-overview.png"/></p>
+
+<p><strong>Reading</strong></p>
+
+<ol>
+<li>Your application requests data from a <mark>Relation</mark> (or its easier cousin <mark>Repository</mark>)</li>
+<li>Data is read from the <mark>Datastore</mark> using the <mark>Adapter</mark></li>
+<li>The result is returned to your application
+
+<ul>
+<li>It can also optionally be mapped to domain objects using <mark>Mappers</mark></li>
+</ul></li>
+</ol>
+
+<p><strong>Writing</strong></p>
+
+<ol>
+<li>Your application calls a <mark>Command</mark> to perform a Create, Update, Delete, or custom operation</li>
+<li>The command runs using its underlying Relation and Adapter to modify the datastore </li>
+<li>The result is returned to your application</li>
+</ol>
+
+<h4 id="adapters"><a href="/introduction/adapters"><strong>Adapters</strong></a></h4>
+
+<p>ROM uses adapters to connect to different data sources (a database, a csv file -
+it doesn&rsquo;t matter) and exposes a native CRUD interface to its relations.</p>
+
+<h4 id="repositories">Repositories</h4>
+
+<p>A repository provides a convenient interface for fetching domain-specific entities
+and value objects from a database. It&rsquo;s a higher-level abstraction built on top
+of relation and mapping layers.</p>
+
+<h4 id="relations">Relations</h4>
+
+<p>A relation is defined as a set of tuples identified by unique pairs of attributes
+and their values. In ROM it is an object that responds to <code>#each</code> which yields hashes. It
+is backed by <mark>a dataset object</mark> provided by the adapter.</p>
+
+<h4 id="mappers">Mappers</h4>
+
+<p>A mapper is an object that takes a relation and maps it into a different representation.
+ROM provides a DSL to define mappers or you can register your own mapper objects.</p>
+
+<h4 id="commands">Commands</h4>
+
+<p>Commands in ROM are intended to safely modify data. Commands can be used to create,
+update and delete. They are usually provided by the adapter, but you may define your own. </p>
+
+<h2 id="next">Next</h2>
+
+<p>Continue on to read about <a href="/learn/basics/setup">Setup</a></p>
+</section><div class="page-article-edit"><hr /><div class="share pull-left"></div><p class="pull-right">Edit this article on <a href="https://github.com/tenjininc/rom-rb.org/tree/master/source/doc-pages/learn/getting-started.md">GitHub</a></p></div></div></div></div></div></div></div><footer><div class="container"><div class="social"><div class="github"><iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=rom-rb&repo=rom&type=watch&count=true" width="110"></iframe></div><div class="twitter"><a class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" href="https://twitter.com/rom_rb">Follow</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div></div><div class="muted copyright">Ruby Object Mapper &copy; 2014-2016</div></div></footer></body></html>

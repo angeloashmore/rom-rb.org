@@ -1,0 +1,194 @@
+<!DOCTYPE html><html><head><link href="/images/favicon.png" rel="icon" type="image/png" /><meta charset="utf-8" /><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /><meta content="ROM &raquo; Learn &raquo; Flat-style via @rom_rb" name="twitter:description" /><meta content="ROM &raquo; Learn &raquo; Flat-style" name="description" /><title>ROM &raquo; Learn &raquo; Flat-style</title><style type="text/css">.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #d0d0d0;
+  background-color: #151515;
+}
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #505050;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
+}
+.highlight .kc {
+  color: #d28445;
+}
+.highlight .kt {
+  color: #d28445;
+}
+.highlight .kd {
+  color: #d28445;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
+}
+.highlight .sr {
+  color: #75b5aa;
+}
+.highlight .si {
+  color: #8f5536;
+}
+.highlight .se {
+  color: #8f5536;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
+}</style><link href="../../../stylesheets/all.css" rel="stylesheet" /><script src="../../../javascripts/all.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script><script>$(function() {
+  var share = new Share(".share")
+});
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2573270-5', 'auto');
+ga('send', 'pageview');</script></head><body class="learn learn_advanced learn_advanced_flat-style learn_advanced_flat-style_index"><div class="page-wrapper"><header><nav class="navbar navbar-default navbar-static-top"><div class="navbar-inner"><div class="container"><a class="navbar-brand" href="/">Ruby Object Mapper</a><ul class="nav navbar-nav"><li class=""><a class="" href="/learn">Learn</a></li><li class="dropdown"><a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">API <span class='caret'/></a><ul class="dropdown-menu" role="menu"><li><a href="http://www.rubydoc.info/gems/rom">rom</a></li><li><a href="http://www.rubydoc.info/gems/rom-sql">rom-sql</a></li><li><a href="http://www.rubydoc.info/gems/rom-yesql">rom-yesql</a></li><li><a href="http://www.rubydoc.info/gems/rom-influxdb">rom-influxdb</a></li><li><a href="http://www.rubydoc.info/gems/rom-event_store">rom-event_store</a></li><li><a href="http://www.rubydoc.info/gems/rom-rethinkdb">rom-rethinkdb</a></li><li><a href="http://www.rubydoc.info/gems/rom-mongo">rom-mongo</a></li><li><a href="http://www.rubydoc.info/gems/rom-redis">rom-redis</a></li><li><a href="http://www.rubydoc.info/gems/rom-csv">rom-csv</a></li><li><a href="http://www.rubydoc.info/gems/rom-yaml">rom-yaml</a></li><li><a href="http://www.rubydoc.info/gems/rom-dm">rom-dm</a></li><li><a href="http://www.rubydoc.info/gems/rom-lotus">rom-lotus</a></li><li><a href="http://www.rubydoc.info/gems/rom-rails">rom-rails</a></li><li><a href="http://www.rubydoc.info/gems/rom-roda">rom-roda</a></li></ul></li><li class=""><a class="" href="/blog">Blog</a></li><li class=""><a class="" href="/contribute">Contribute</a></li><li class=""><a class="" href="/status">Status</a></li><li class=""><a class="" href="/backers">Backers <3</a></li></ul></div></div></nav></header><div class="container"><div class="content"><div class="row"><div class="col-md-3"><ul class="nav nav-pills nav-stacked"><li class="nav-heading"><a class="nav-heading" href="/learn">Introduction</a></li><li class=""><a class="" href="/learn/introduction/philosophy">Philosophy</a></li><li class=""><a class="" href="/learn/introduction/why">Why ROM?</a></li><li class=""><a class="" href="/learn/introduction/activerecord">Active Record and ROM</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/getting-started">Getting Started</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/setup">Setup</a></li><li class=""><a class="" href="/learn/setup/block-style">Block Style</a></li><li class=""><a class="" href="/learn/setup/rails">Rails</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/read">Reading</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/write">Writing</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/adapters">Adapters</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/advanced">Advanced Topics</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/glossary">Glossary</a></li></ul></div><div class="col-md-9"><div class="page-article"><h1 id="advanced-flat-style">Advanced - Flat Style</h1>
+
+<p>Block style setup is suitable for simple, quick&#39;n&#39;dirty scripts that need to access
+databases, in a typical application setup, you want to break down individual
+component definitions, like relations or commands, into separate files.</p>
+
+<p><strong>Framework integrations take care of the setup for you. If you want to use ROM with
+a framework, please refer to <a href="/learn/frameworks">frameworks</a> section.</strong></p>
+
+<h2 id="setup">Setup</h2>
+
+<p>To do setup in flat style, create a <code>ROM::Configuration</code> object. This is the same object that gets yielded into your
+block in block-style setup, so the API is identical.</p>
+<pre class="highlight ruby"><code><span class="n">configuration</span> <span class="o">=</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:memory</span><span class="p">,</span> <span class="s1">'memory://test'</span><span class="p">)</span>
+<span class="n">configuration</span><span class="p">.</span><span class="nf">relation</span><span class="p">(</span><span class="ss">:users</span><span class="p">)</span>
+<span class="c1"># ... etc</span>
+</code></pre>
+
+<p>When you’re finished configuring, pass the configuration object to <code>ROM.container</code> to generate the finalized
+container. There are no differences in the internal semantics between block-style and flat-style setup.</p>
+
+<h3 id="registering-components">Registering Components</h3>
+
+<p>ROM components need to be registered with the ROM environment in order to be used.</p>
+
+<p>The <code>:macros</code> plugin handles this behind the scenes for you whenever you use the DSL to declare a ROM component. Call <code>use(:macros)</code> to enable the plugin:</p>
+<pre class="highlight ruby"><code><span class="n">configuration</span> <span class="o">=</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:memory</span><span class="p">,</span> <span class="s1">'memory://test'</span><span class="p">)</span>
+
+<span class="c1"># Anything after this line will be automatically registered</span>
+<span class="n">configuration</span><span class="p">.</span><span class="nf">use</span> <span class="ss">:macros</span>
+
+<span class="c1"># Declare Relations, Commands, and Mappers here</span>
+</code></pre>
+
+<p>If you prefer to create explicit classes for your components you must register them with the configuration directly:</p>
+<pre class="highlight ruby"><code><span class="n">configuration</span> <span class="o">=</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:memory</span><span class="p">,</span> <span class="s1">'memory://test'</span><span class="p">)</span>
+
+<span class="n">configuration</span><span class="p">.</span><span class="nf">register_relation</span><span class="p">(</span><span class="no">OneOfMyRelations</span><span class="p">)</span>
+<span class="n">configuration</span><span class="p">.</span><span class="nf">register_relation</span><span class="p">(</span><span class="no">AnotherOfMyRelations</span><span class="p">)</span>
+<span class="n">configuration</span><span class="p">.</span><span class="nf">register_command</span><span class="p">(</span><span class="no">User</span><span class="o">::</span><span class="no">CreateCommand</span><span class="p">)</span>
+<span class="n">configuration</span><span class="p">.</span><span class="nf">register_mapper</span><span class="p">(</span><span class="no">User</span><span class="o">::</span><span class="no">UserMapper</span><span class="p">)</span>
+</code></pre>
+
+<p>You can pass multiple components to each <code>register</code> call, as a list of arguments.</p>
+
+<h3 id="auto-registration">Auto-registration</h3>
+
+<p>ROM provides <code>auto_registration</code> as a convenience method for automatically <code>require</code>-ing and registering components that are not declared with the DSL. At a minimum, <code>auto_registration</code> requires a base directory. By default, it will load relations from <code>&lt;base&gt;/relations</code>, commands from <code>&lt;base&gt;/commands</code>, and mappers from <code>&lt;base&gt;/mappers</code>.</p>
+<pre class="highlight ruby"><code><span class="n">configuration</span> <span class="o">=</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:memory</span><span class="p">)</span>
+<span class="n">configuration</span><span class="p">.</span><span class="nf">auto_registration</span><span class="p">(</span><span class="n">__dir__</span><span class="p">)</span>
+<span class="n">container</span> <span class="o">=</span> <span class="no">ROM</span><span class="p">.</span><span class="nf">container</span><span class="p">(</span><span class="n">configuration</span><span class="p">)</span>
+</code></pre>
+
+<p>By default, it assumes that each class is in the root namespace. A <code>namespace</code> option can be provided if that is not the case. Finally, the file name and the name of the constant must match.</p>
+<pre class="highlight ruby"><code><span class="n">configuration</span> <span class="o">=</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:memory</span><span class="p">)</span>
+<span class="n">configuration</span><span class="p">.</span><span class="nf">auto_registration</span><span class="p">(</span><span class="n">__dir__</span><span class="p">),</span> <span class="ss">namespace: </span><span class="s2">"MyApp"</span><span class="p">)</span>
+<span class="n">container</span> <span class="o">=</span> <span class="no">ROM</span><span class="p">.</span><span class="nf">container</span><span class="p">(</span><span class="n">configuration</span><span class="p">)</span>
+</code></pre>
+<pre class="highlight ruby"><code><span class="n">configuration</span> <span class="o">=</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Configuration</span><span class="p">.</span><span class="nf">new</span><span class="p">(</span><span class="ss">:memory</span><span class="p">)</span>
+<span class="n">configuration</span><span class="p">.</span><span class="nf">auto_registration</span><span class="p">(</span><span class="n">__dir__</span><span class="p">),</span> <span class="ss">namespace: </span><span class="s2">"MyApp"</span><span class="p">,</span> <span class="ss">relations: </span><span class="p">{</span><span class="ss">namespace: </span><span class="s2">"MyApp::Relations"</span><span class="p">})</span>
+<span class="n">container</span> <span class="o">=</span> <span class="no">ROM</span><span class="p">.</span><span class="nf">container</span><span class="p">(</span><span class="n">configuration</span><span class="p">)</span>
+</code></pre>
+
+<hr>
+
+<h2 id="relations">Relations</h2>
+
+<p>Relations are the interface to get data out of your persistence solution. They represent groups of data; in a database
+scenario, these are equivalent to tables.</p>
+
+<p>As your application grows in scope or complexity, you will likely want to DRY up common logic from your
+Repository class(es) into Relations. In other situations, you may also use Relations directly - Repository is just
+a convenience, not a requirement.</p>
+
+<p>While the DSL syntax is often convenient, Relations can also be defined with a class extending <code>ROM::Relation</code> from the
+appropriate adapter.</p>
+<pre class="highlight plaintext"><code># Defines a Users relation for the SQL adapter
+class Users &lt; ROM::Relation[:sql]
+
+end
+</code></pre>
+
+<p>Relations can declare the specific <a href="http://rom-rb.org/introduction/glossary/#gateway">gateway</a> and
+<a href="http://rom-rb.org/introduction/glossary/#dataset">dataset</a> it takes data from, as well as the registered name of the
+relation. The following example sets the default options explicitly:</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Users</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Relation</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+  <span class="n">register_as</span> <span class="ss">:users</span>    <span class="c1"># the registered name; eg. for use in Repository’s relations(...) method</span>
+  <span class="n">gateway</span> <span class="ss">:default</span>      <span class="c1"># the gateway name, as defined in setup</span>
+  <span class="n">dataset</span> <span class="ss">:users</span>        <span class="c1"># eg. in sql, this is the table name</span>
+<span class="k">end</span>
+</code></pre>
+
+<h2 id="commands">Commands</h2>
+
+<p>Just like Relations, Commands have an alternative style as a regular class:</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">CreateUser</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Commands</span><span class="o">::</span><span class="no">Create</span><span class="p">[</span><span class="ss">:memory</span><span class="p">]</span>
+
+<span class="k">end</span>
+</code></pre>
+
+<p>Commands have three settings: their relation, which takes the registered name of a relation; their result type, either <code>:one</code> or <code>:many</code>; and their registered name.</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">CreateUser</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Commands</span><span class="o">::</span><span class="no">Create</span><span class="p">[</span><span class="ss">:memory</span><span class="p">]</span>
+   <span class="n">register_as</span> <span class="ss">:create</span>
+   <span class="n">relation</span> <span class="ss">:users</span>
+   <span class="n">result</span> <span class="ss">:one</span>
+<span class="k">end</span>
+</code></pre>
+<div class="page-article-edit"><hr /><div class="share pull-left"></div><p class="pull-right">Edit this article on <a href="https://github.com/tenjininc/rom-rb.org/tree/master/source/doc-pages/learn/advanced/flat-style.md">GitHub</a></p></div></div></div></div></div></div></div><footer><div class="container"><div class="social"><div class="github"><iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=rom-rb&repo=rom&type=watch&count=true" width="110"></iframe></div><div class="twitter"><a class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" href="https://twitter.com/rom_rb">Follow</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div></div><div class="muted copyright">Ruby Object Mapper &copy; 2014-2016</div></div></footer></body></html>

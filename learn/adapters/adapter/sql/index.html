@@ -1,0 +1,412 @@
+<!DOCTYPE html><html><head><link href="/images/favicon.png" rel="icon" type="image/png" /><meta charset="utf-8" /><meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" /><meta content="ROM &raquo; Learn &raquo; Sql via @rom_rb" name="twitter:description" /><meta content="ROM &raquo; Learn &raquo; Sql" name="description" /><title>ROM &raquo; Learn &raquo; Sql</title><style type="text/css">.highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #d0d0d0;
+  background-color: #151515;
+}
+.highlight .err {
+  color: #151515;
+  background-color: #ac4142;
+}
+.highlight .c, .highlight .cd, .highlight .cm, .highlight .c1, .highlight .cs {
+  color: #505050;
+}
+.highlight .cp {
+  color: #f4bf75;
+}
+.highlight .nt {
+  color: #f4bf75;
+}
+.highlight .o, .highlight .ow {
+  color: #d0d0d0;
+}
+.highlight .p, .highlight .pi {
+  color: #d0d0d0;
+}
+.highlight .gi {
+  color: #90a959;
+}
+.highlight .gd {
+  color: #ac4142;
+}
+.highlight .gh {
+  color: #6a9fb5;
+  background-color: #151515;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #aa759f;
+}
+.highlight .kc {
+  color: #d28445;
+}
+.highlight .kt {
+  color: #d28445;
+}
+.highlight .kd {
+  color: #d28445;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #90a959;
+}
+.highlight .sr {
+  color: #75b5aa;
+}
+.highlight .si {
+  color: #8f5536;
+}
+.highlight .se {
+  color: #8f5536;
+}
+.highlight .nn {
+  color: #f4bf75;
+}
+.highlight .nc {
+  color: #f4bf75;
+}
+.highlight .no {
+  color: #f4bf75;
+}
+.highlight .na {
+  color: #6a9fb5;
+}
+.highlight .m, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mb, .highlight .mx {
+  color: #90a959;
+}
+.highlight .ss {
+  color: #90a959;
+}</style><link href="../../../../stylesheets/all.css" rel="stylesheet" /><script src="../../../../javascripts/all.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script><script>$(function() {
+  var share = new Share(".share")
+});
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-2573270-5', 'auto');
+ga('send', 'pageview');</script></head><body class="learn learn_adapters learn_adapters_adapter learn_adapters_adapter_sql learn_adapters_adapter_sql_index"><div class="page-wrapper"><header><nav class="navbar navbar-default navbar-static-top"><div class="navbar-inner"><div class="container"><a class="navbar-brand" href="/">Ruby Object Mapper</a><ul class="nav navbar-nav"><li class=""><a class="" href="/learn">Learn</a></li><li class="dropdown"><a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">API <span class='caret'/></a><ul class="dropdown-menu" role="menu"><li><a href="http://www.rubydoc.info/gems/rom">rom</a></li><li><a href="http://www.rubydoc.info/gems/rom-sql">rom-sql</a></li><li><a href="http://www.rubydoc.info/gems/rom-yesql">rom-yesql</a></li><li><a href="http://www.rubydoc.info/gems/rom-influxdb">rom-influxdb</a></li><li><a href="http://www.rubydoc.info/gems/rom-event_store">rom-event_store</a></li><li><a href="http://www.rubydoc.info/gems/rom-rethinkdb">rom-rethinkdb</a></li><li><a href="http://www.rubydoc.info/gems/rom-mongo">rom-mongo</a></li><li><a href="http://www.rubydoc.info/gems/rom-redis">rom-redis</a></li><li><a href="http://www.rubydoc.info/gems/rom-csv">rom-csv</a></li><li><a href="http://www.rubydoc.info/gems/rom-yaml">rom-yaml</a></li><li><a href="http://www.rubydoc.info/gems/rom-dm">rom-dm</a></li><li><a href="http://www.rubydoc.info/gems/rom-lotus">rom-lotus</a></li><li><a href="http://www.rubydoc.info/gems/rom-rails">rom-rails</a></li><li><a href="http://www.rubydoc.info/gems/rom-roda">rom-roda</a></li></ul></li><li class=""><a class="" href="/blog">Blog</a></li><li class=""><a class="" href="/contribute">Contribute</a></li><li class=""><a class="" href="/status">Status</a></li><li class=""><a class="" href="/backers">Backers <3</a></li></ul></div></div></nav></header><div class="container"><div class="content"><div class="row"><div class="col-md-3"><ul class="nav nav-pills nav-stacked"><li class="nav-heading"><a class="nav-heading" href="/learn">Introduction</a></li><li class=""><a class="" href="/learn/introduction/philosophy">Philosophy</a></li><li class=""><a class="" href="/learn/introduction/why">Why ROM?</a></li><li class=""><a class="" href="/learn/introduction/activerecord">Active Record and ROM</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/getting-started">Getting Started</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/setup">Setup</a></li><li class=""><a class="" href="/learn/setup/block-style">Block Style</a></li><li class=""><a class="" href="/learn/setup/rails">Rails</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/read">Reading</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/write">Writing</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/adapters">Adapters</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/advanced">Advanced Topics</a></li><li class="nav-heading"><a class="nav-heading" href="/learn/glossary">Glossary</a></li></ul></div><div class="col-md-9"><div class="page-article"><h1 id="sql-adapter">SQL Adapter</h1>
+
+<p>ROM supports SQL databases via <code>rom-sql</code> adapter which currently uses <a href="http://sequel.jeremyevans.net/">Sequel</a>
+under the hood. The adapter ships with an enhanced <code>Relation</code> that supports
+sql-specific query DSL and association macros that simplify constructing joins.</p>
+
+<h2 id="setup">Setup</h2>
+
+<p>Refer to the general <a href="/learn/setup">setup</a> for information how to setup rom with
+a specific adapter.</p>
+
+<h2 id="supported-sql-databases">Supported SQL Databases</h2>
+
+<p>Following connection URI schemes are supported:</p>
+
+<ul>
+<li>ado</li>
+<li>amalgalite</li>
+<li>cubrid</li>
+<li>db2</li>
+<li>dbi</li>
+<li>do</li>
+<li>fdbsql</li>
+<li>firebird</li>
+<li>ibmdb</li>
+<li>informix</li>
+<li>jdbc</li>
+<li>mysql</li>
+<li>mysql2</li>
+<li>odbc</li>
+<li>openbase</li>
+<li>oracle</li>
+<li>postgres</li>
+<li>sqlanywhere</li>
+<li>sqlite</li>
+<li>swift</li>
+<li>tinytds</li>
+</ul>
+
+<h2 id="defining-relations">Defining Relations</h2>
+
+<p>To define an SQL relation you can use the standard way of defining relations in ROM:</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Users</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Relation</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>By default relation&rsquo;s <code>dataset</code> name is inferred from the class name. You can
+override this easily:</p>
+<pre class="highlight ruby"><code><span class="k">module</span> <span class="nn">Relations</span>
+  <span class="k">class</span> <span class="nc">Users</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Relation</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+    <span class="n">dataset</span> <span class="ss">:users</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>To define relations that are exposed to you application you can define your own
+methods and use internal <a href="#">query DSL</a>:</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Users</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Relation</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+  <span class="k">def</span> <span class="nf">by_id</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+    <span class="n">where</span><span class="p">(</span><span class="ss">id: </span><span class="nb">id</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>Remember that relation methods must always return other relations, you shouldn&rsquo;t
+return a single tuple.</p>
+
+<h2 id="associations">Associations</h2>
+
+<p>In ROM there&rsquo;s no &ldquo;relationship&rdquo; concept, instead you simply use relation interface
+to load data like you want.</p>
+
+<h3 id="using-joins">Using Joins</h3>
+
+<p>To load associated relations you can simply use <code>inner_join</code> or <code>left_join</code>:</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Users</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Relation</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+  <span class="k">def</span> <span class="nf">with_tasks</span>
+    <span class="n">inner_join</span><span class="p">(</span><span class="ss">:tasks</span><span class="p">,</span> <span class="ss">user_id: :id</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">with_posts</span>
+    <span class="n">left_join</span><span class="p">(</span><span class="ss">:posts</span><span class="p">,</span> <span class="ss">user_id: :id</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">rom</span><span class="p">.</span><span class="nf">relations</span><span class="p">[</span><span class="ss">:users</span><span class="p">].</span><span class="nf">with_tasks</span>
+<span class="n">rom</span><span class="p">.</span><span class="nf">relations</span><span class="p">[</span><span class="ss">:users</span><span class="p">].</span><span class="nf">with_posts</span>
+</code></pre>
+
+<h3 id="qualifying-and-renaming-attributes">Qualifying And Renaming Attributes</h3>
+
+<p>Joining relations introduces a problem of having conflicting attribute names. To
+solve this you often need to qualify and rename columns.</p>
+
+<p>To qualify all attributes in a relation:</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Users</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Relation</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+  <span class="k">def</span> <span class="nf">with_tasks</span>
+    <span class="n">qualified</span><span class="p">.</span><span class="nf">inner_join</span><span class="p">(</span><span class="ss">:tasks</span><span class="p">,</span> <span class="ss">user_id: :id</span><span class="p">)</span>
+  <span class="k">end</span>
+  <span class="c1"># produces "SELECT users.id, users.name ..."</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>To rename all attributes in a relation:</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Users</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Relation</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+  <span class="k">def</span> <span class="nf">with_tasks</span>
+    <span class="n">prefix</span><span class="p">(</span><span class="ss">:user</span><span class="p">).</span><span class="nf">qualified</span><span class="p">.</span><span class="nf">inner_join</span><span class="p">(</span><span class="ss">:tasks</span><span class="p">,</span> <span class="ss">user_id: :id</span><span class="p">)</span>
+  <span class="k">end</span>
+  <span class="c1"># produces "SELECT users.id AS user_id, users.name AS user_name ..."</span>
+<span class="k">end</span>
+</code></pre>
+
+<h3 id="using-renamed-attributes-in-group-or-where-clauses">Using Renamed Attributes in GROUP or WHERE Clauses</h3>
+
+<p>If attributes need to be qualified and you want to use them in <code>group</code> or <code>where</code>
+you can use special syntax with double-underscore:</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Users</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Relation</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+  <span class="k">def</span> <span class="nf">with_tasks</span>
+    <span class="n">prefix</span><span class="p">(</span><span class="ss">:user</span><span class="p">).</span><span class="nf">qualified</span><span class="p">.</span><span class="nf">inner_join</span><span class="p">(</span><span class="ss">:tasks</span><span class="p">,</span> <span class="ss">user_id: :id</span><span class="p">)</span>
+      <span class="p">.</span><span class="nf">where</span><span class="p">(</span><span class="ss">users__name: </span><span class="s1">'Jane'</span><span class="p">)</span>
+  <span class="k">end</span>
+  <span class="c1"># produces "SELECT ... FROM ... WHERE users.name = 'Jane'"</span>
+<span class="k">end</span>
+</code></pre>
+
+<h3 id="mapping-joined-relations">Mapping Joined Relations</h3>
+
+<p>You can map a result from a join to a single aggregate using mappers:</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Users</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Relation</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+  <span class="k">def</span> <span class="nf">with_tasks</span>
+    <span class="n">joinable</span>
+      <span class="p">.</span><span class="nf">inner_join</span><span class="p">(</span><span class="ss">:tasks</span><span class="p">,</span> <span class="ss">user_id: :id</span><span class="p">)</span>
+      <span class="p">.</span><span class="nf">select_append</span><span class="p">(</span><span class="ss">:tasks__title</span><span class="p">)</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="nf">joinable</span>
+    <span class="n">prefix</span><span class="p">(</span><span class="ss">:user</span><span class="p">).</span><span class="nf">qualified</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">UserMapper</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Mapper</span>
+  <span class="n">relation</span> <span class="ss">:users</span>
+  <span class="n">register_as</span> <span class="ss">:user_with_tasks</span>
+
+  <span class="n">prefix</span> <span class="ss">:user</span>
+
+  <span class="n">attribute</span> <span class="ss">:id</span>
+  <span class="n">attribute</span> <span class="ss">:name</span>
+
+  <span class="n">group</span> <span class="ss">:tasks</span> <span class="k">do</span>
+    <span class="n">attribute</span> <span class="ss">:title</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">rom</span><span class="p">.</span><span class="nf">relations</span><span class="p">[</span><span class="ss">:users</span><span class="p">].</span><span class="nf">as</span><span class="p">(</span><span class="ss">:user_with_tasks</span><span class="p">).</span><span class="nf">with_tasks</span><span class="p">.</span><span class="nf">one</span>
+</code></pre>
+
+<p>This technique is brittle as it requires careful selection of the attributes and
+dealing with potential name conflicts; however, for performance reasons you may
+have cases where you would prefer to use joins.</p>
+
+<p>Here ROM doesn&rsquo;t block you and gives you all that&rsquo;s needed to map complex join
+results into a simple domain aggregate.</p>
+
+<h3 id="combining-relations">Combining Relations</h3>
+
+<p>More common way of building aggregates from relations is to combine relations.
+This is a very powerful and flexible technique that results in a small amount
+of queries and fast mapping to domain aggregates.</p>
+
+<p>The <code>combine</code> interface is a standard feature available in ROM for all adapters
+so there&rsquo;s nothing special about it in the SQL land:</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">Tasks</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Relation</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+  <span class="k">def</span> <span class="nf">for_users</span><span class="p">(</span><span class="n">users</span><span class="p">)</span>
+    <span class="n">where</span><span class="p">(</span><span class="ss">user_id: </span><span class="n">users</span><span class="p">.</span><span class="nf">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">u</span><span class="o">|</span> <span class="n">u</span><span class="p">[</span><span class="ss">:id</span><span class="p">]</span> <span class="p">})</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">UserMapper</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Mapper</span>
+  <span class="n">relation</span> <span class="ss">:users</span>
+  <span class="n">register_as</span> <span class="ss">:user_with_tasks</span>
+
+  <span class="n">combine</span> <span class="ss">:tasks</span><span class="p">,</span> <span class="ss">on: </span><span class="p">{</span> <span class="ss">id: :user_id</span> <span class="p">}</span>
+<span class="k">end</span>
+
+<span class="n">users</span> <span class="o">=</span> <span class="n">rom</span><span class="p">.</span><span class="nf">relation</span><span class="p">(</span><span class="ss">:users</span><span class="p">)</span>
+<span class="n">tasks</span> <span class="o">=</span> <span class="n">rom</span><span class="p">.</span><span class="nf">relation</span><span class="p">(</span><span class="ss">:tasks</span><span class="p">)</span>
+
+<span class="n">users</span><span class="p">.</span><span class="nf">combine</span><span class="p">(</span><span class="n">tasks</span><span class="p">).</span><span class="nf">one</span>
+</code></pre>
+
+<aside class="well">
+It is recommended to user rom-repository with its auto-mapping capabilities instead
+of defining complex mappers.
+</aside>
+
+<h2 id="commands">Commands</h2>
+
+<p>SQL commands support all features of the standard <a href="/guides/basics/commands/">ROM command API</a>. In addition, the following SQL-specific features are supported:</p>
+
+<ul>
+<li>The <code>associates</code> plugin, for connecting foreign key values when composing commands</li>
+<li>The <code>transaction</code> interface, which provides a block scope for working with database transactions</li>
+</ul>
+
+<h3 id="associates-plugin">Associates Plugin</h3>
+
+<p>The <code>associates</code> plugin is used to automatically set foreign-key values when using
+command composition.</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">CreateTask</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Commands</span><span class="o">::</span><span class="no">Create</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+  <span class="n">relation</span> <span class="ss">:tasks</span>
+  <span class="n">register_as</span> <span class="ss">:create</span>
+  <span class="n">result</span> <span class="ss">:one</span>
+
+  <span class="n">associates</span> <span class="ss">:user</span><span class="p">,</span> <span class="ss">key: </span><span class="p">[</span><span class="ss">:user_id</span><span class="p">,</span> <span class="ss">:id</span><span class="p">]</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">CreateUser</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Commands</span><span class="o">::</span><span class="no">Create</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+  <span class="n">relation</span> <span class="ss">:users</span>
+  <span class="n">register_as</span> <span class="ss">:create</span>
+  <span class="n">result</span> <span class="ss">:one</span>
+<span class="k">end</span>
+
+<span class="c1"># using command composition</span>
+<span class="n">create_user</span> <span class="o">=</span> <span class="n">rom</span><span class="p">.</span><span class="nf">command</span><span class="p">(</span><span class="ss">:users</span><span class="p">).</span><span class="nf">create</span>
+<span class="n">create_task</span> <span class="o">=</span> <span class="n">rom</span><span class="p">.</span><span class="nf">command</span><span class="p">(</span><span class="ss">:tasks</span><span class="p">).</span><span class="nf">create</span>
+
+<span class="n">command</span> <span class="o">=</span> <span class="n">create_user</span><span class="p">.</span><span class="nf">with</span><span class="p">(</span><span class="ss">name: </span><span class="s1">'Jane'</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="n">create_task</span><span class="p">.</span><span class="nf">with</span><span class="p">(</span><span class="ss">title: </span><span class="s1">'Task'</span><span class="p">)</span>
+<span class="n">command</span><span class="p">.</span><span class="nf">call</span>
+
+<span class="c1"># using a graph</span>
+<span class="n">command</span> <span class="o">=</span> <span class="n">rom</span><span class="p">.</span><span class="nf">command</span><span class="p">([</span>
+  <span class="p">{</span> <span class="ss">user: :users</span> <span class="p">},</span> <span class="p">[</span><span class="ss">:create</span><span class="p">,</span> <span class="p">[{</span> <span class="ss">task: :tasks</span> <span class="p">},</span> <span class="p">[</span><span class="ss">:create</span><span class="p">]]]</span>
+<span class="p">])</span>
+
+<span class="n">command</span><span class="p">.</span><span class="nf">call</span> <span class="ss">user: </span><span class="p">{</span> <span class="ss">name: </span><span class="s1">'Jane'</span><span class="p">,</span> <span class="ss">task: </span><span class="p">{</span> <span class="ss">title: </span><span class="s1">'Task'</span> <span class="p">}</span> <span class="p">}</span>
+</code></pre>
+
+<h3 id="transactions">Transactions</h3>
+
+<p>To use a transaction simple wrap calling a command inside its transaction block:</p>
+<pre class="highlight ruby"><code><span class="k">class</span> <span class="nc">CreateTask</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Commands</span><span class="o">::</span><span class="no">Create</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+  <span class="n">relation</span> <span class="ss">:tasks</span>
+  <span class="n">register_as</span> <span class="ss">:create</span>
+  <span class="n">result</span> <span class="ss">:one</span>
+
+  <span class="n">associates</span> <span class="ss">:user</span><span class="p">,</span> <span class="ss">key: </span><span class="p">[</span><span class="ss">:user_id</span><span class="p">,</span> <span class="ss">:id</span><span class="p">]</span>
+<span class="k">end</span>
+
+<span class="k">class</span> <span class="nc">CreateUser</span> <span class="o">&lt;</span> <span class="no">ROM</span><span class="o">::</span><span class="no">Commands</span><span class="o">::</span><span class="no">Create</span><span class="p">[</span><span class="ss">:sql</span><span class="p">]</span>
+  <span class="n">relation</span> <span class="ss">:users</span>
+  <span class="n">register_as</span> <span class="ss">:create</span>
+  <span class="n">result</span> <span class="ss">:one</span>
+<span class="k">end</span>
+
+<span class="c1"># using command composition</span>
+<span class="n">create_user</span> <span class="o">=</span> <span class="n">rom</span><span class="p">.</span><span class="nf">command</span><span class="p">(</span><span class="ss">:users</span><span class="p">).</span><span class="nf">create</span>
+<span class="n">create_task</span> <span class="o">=</span> <span class="n">rom</span><span class="p">.</span><span class="nf">command</span><span class="p">(</span><span class="ss">:tasks</span><span class="p">).</span><span class="nf">create</span>
+
+<span class="n">command</span> <span class="o">=</span> <span class="n">create_user</span><span class="p">.</span><span class="nf">with</span><span class="p">(</span><span class="ss">name: </span><span class="s1">'Jane'</span><span class="p">)</span> <span class="o">&gt;&gt;</span> <span class="n">create_task</span><span class="p">.</span><span class="nf">with</span><span class="p">(</span><span class="ss">title: </span><span class="s1">'Task'</span><span class="p">)</span>
+
+<span class="c1"># rollback happens when any error is raised ie a CommandError from a validator</span>
+<span class="n">command</span><span class="p">.</span><span class="nf">transaction</span> <span class="k">do</span>
+  <span class="n">command</span><span class="p">.</span><span class="nf">call</span>
+<span class="k">end</span>
+
+<span class="c1"># manual rollback</span>
+<span class="n">create_user</span><span class="p">.</span><span class="nf">transaction</span> <span class="k">do</span>
+  <span class="n">user</span> <span class="o">=</span> <span class="n">create_user</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="ss">name: </span><span class="s1">'Jane'</span><span class="p">)</span>
+
+  <span class="k">if</span> <span class="n">all_good?</span>
+    <span class="n">task</span> <span class="o">=</span> <span class="n">create_task</span><span class="p">.</span><span class="nf">with</span><span class="p">(</span><span class="ss">title: </span><span class="s1">'Jane'</span><span class="p">).</span><span class="nf">call</span><span class="p">(</span><span class="n">user</span><span class="p">)</span>
+  <span class="k">else</span>
+    <span class="k">raise</span> <span class="no">ROM</span><span class="o">::</span><span class="no">SQL</span><span class="o">::</span><span class="no">Rollback</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<h2 id="migrations">Migrations</h2>
+
+<p>There are migration tasks available and migration interface available in SQL
+gateways.</p>
+
+<h3 id="using-rake-tasks">Using Rake Tasks</h3>
+
+<p>To load migration tasks simply require them and provide <code>db:setup</code> task which
+sets up ROM.</p>
+<pre class="highlight ruby"><code><span class="c1"># your rakefile</span>
+
+<span class="nb">require</span> <span class="s1">'rom/sql/rake_task'</span>
+
+<span class="n">namespace</span> <span class="ss">:db</span> <span class="k">do</span>
+  <span class="n">task</span> <span class="ss">:setup</span> <span class="k">do</span>
+    <span class="c1"># your ROM setup code</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre>
+
+<p>Following tasks are available:</p>
+
+<ul>
+<li><code>rake db:create_migration[create_users]</code> - create migration file under <code>db/migrations</code></li>
+<li><code>rake db:migrate</code> - runs migrations</li>
+<li><code>rake db:clean</code> - removes all tables</li>
+<li><code>rake db:reset</code> - removes all tables and re-runs migrations</li>
+</ul>
+
+<h3 id="using-gateway-migration-interface">Using Gateway Migration Interface</h3>
+
+<p>You can use migrations using gateway&rsquo;s interface:</p>
+<pre class="highlight ruby"><code><span class="no">ROM</span><span class="p">.</span><span class="nf">setup</span><span class="p">(</span><span class="ss">:sql</span><span class="p">,</span> <span class="s1">'postgres://localhost/rom'</span><span class="p">)</span>
+
+<span class="n">gateway</span> <span class="o">=</span> <span class="no">ROM</span><span class="p">.</span><span class="nf">finalize</span><span class="p">.</span><span class="nf">env</span><span class="p">.</span><span class="nf">gateways</span><span class="p">[</span><span class="ss">:default</span><span class="p">]</span>
+
+<span class="n">migration</span> <span class="o">=</span> <span class="n">gateway</span><span class="p">.</span><span class="nf">migration</span> <span class="k">do</span>
+  <span class="n">change</span> <span class="k">do</span>
+    <span class="n">create_table</span> <span class="ss">:users</span> <span class="k">do</span>
+      <span class="n">primary_key</span> <span class="ss">:id</span>
+      <span class="n">column</span> <span class="ss">:name</span><span class="p">,</span> <span class="no">String</span><span class="p">,</span> <span class="ss">null: </span><span class="kp">false</span>
+    <span class="k">end</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+
+<span class="n">migration</span><span class="p">.</span><span class="nf">apply</span><span class="p">(</span><span class="n">gateway</span><span class="p">.</span><span class="nf">connection</span><span class="p">,</span> <span class="ss">:up</span><span class="p">)</span>
+</code></pre>
+<div class="page-article-edit"><hr /><div class="share pull-left"></div><p class="pull-right">Edit this article on <a href="https://github.com/tenjininc/rom-rb.org/tree/master/source/doc-pages/learn/adapters/adapter/sql.md">GitHub</a></p></div></div></div></div></div></div></div><footer><div class="container"><div class="social"><div class="github"><iframe allowtransparency="true" frameborder="0" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=rom-rb&repo=rom&type=watch&count=true" width="110"></iframe></div><div class="twitter"><a class="twitter-follow-button" data-show-count="true" data-show-screen-name="false" href="https://twitter.com/rom_rb">Follow</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div></div><div class="muted copyright">Ruby Object Mapper &copy; 2014-2016</div></div></footer></body></html>
